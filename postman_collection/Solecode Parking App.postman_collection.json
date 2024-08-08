@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "9476f292-2cac-45f8-865a-eb48b8cee72b",
+		"name": "Solecode Parking App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7502499"
+	},
+	"item": [
+		{
+			"name": "create parking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrival\": \"Monday\",\r\n    \"bill\": \"15000\",\r\n    \"deprature\": \"Tuesday\",\r\n    \"registno\": \"B 1234 ABC\",\r\n    \"status\": \"Parked\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update parking",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrival\": \"Monday\",\r\n    \"bill\": \"15000\",\r\n    \"deprature\": \"Tuesday\",\r\n    \"registno\": \"B 1136 DES\",\r\n    \"status\": \"Parked\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/cars/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"cars",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get parking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"brand\": \"Ducati\",\r\n\t\"type\": \"Monster 795\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get parking by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"brand\": \"Ducati\",\r\n\t\"type\": \"Monster 795\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/cars/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"cars",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete parking",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"brand\": \"Ducati\",\r\n\t\"type\": \"Monster 795\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/cars/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"cars",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
